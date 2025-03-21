@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tabela-estilizada {
+        width: 50%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .tabela-estilizada th, .tabela-estilizada td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    .tabela-estilizada th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .tabela-zebra {
+        width: 60%;
+        border-collapse: collapse;
+    }
+    .tabela-zebra th, .tabela-zebra td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .tabela-zebra tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .tabela-container {
+        overflow-x: auto;
+    }
+    .tabela-responsiva {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 400px;
+    }
+    .tabela-responsiva th, .tabela-responsiva td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+        
+    </style>
+    <head>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>Brasilia</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>22</td>
+                <td>Brasilia</td>
+            </tr>
+        </table>
+        <hr>
+
+        <table class="tabela-estilizada">
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3500</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>R$ 2500</td>
+                <td>5</td>
+            </tr>
+        </table>
+        <hr>
+
+        <table class="tabela-zebra">
+            <tr>
+                <th>Time</th>
+                <th>Pontos</th>
+                <th>Posição</th>
+            </tr>
+            <tr>
+                <td>VASCODAGAMA</td>
+                <td>200</td>
+                <td>1º</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td>42</td>
+                <td>2º</td>
+            </tr>
+            <tr>
+                <td>Grêmio</td>
+                <td>38</td>
+                <td>3º</td>
+            </tr>
+        </table>
+        <hr>
+        
+        <div class="tabela-container">
+            <table class="tabela-responsiva">
+                <tr>
+                    <th>Curso</th>
+                    <th>Duração</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Escolinha de futebol</td>
+                    <td>6h</td>
+                    <td>R$ 80</td>
+                </tr>
+                <tr>
+                    <td>Informatica</td>
+                    <td>60h</td>
+                    <td>R$ 300</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        
+        <table border="1">
+            <tr>
+                <th colspan="2">Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td rowspan="2">Silva</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+            </tr>
+        </table>
+        
+ 
+    </head>
